@@ -11,7 +11,7 @@ const AllTickets = () => {
 
     async function getCount() {
         try {
-            const response = await axios.get('http://localhost:3000/tickets_count/data');
+            const response = await axios.get('https://web2-projekt.onrender.com/tickets_count/data');
             console.log("Response: ", response);
             setCount(response.data);
         }
