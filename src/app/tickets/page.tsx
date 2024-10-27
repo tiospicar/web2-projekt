@@ -21,7 +21,7 @@ const Tickets = () => {
 
     async function getTicket(id: string) {
         try {
-            const response = await axios.get(`http://localhost:3000/tickets/${id}/data`);
+            const response = await axios.get(`https://web2-projekt.onrender.com/tickets/${id}/data`);
             setOib(response.data.oib);
             setFirstname(response.data.first_name);
             setLastname(response.data.last_name);
@@ -33,7 +33,7 @@ const Tickets = () => {
 
     async function getUser(){
         try {
-            const response = await axios.get(`http://localhost:3000/me`);
+            const response = await axios.get(`https://web2-projekt.onrender.com:3000/me`);
             setUsername(response.data.name);
         }
         catch (error) {

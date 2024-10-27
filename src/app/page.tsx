@@ -48,7 +48,7 @@ export default function Home() {
         console.log(oib, firstname, lastname);
 
         try {
-            const response = await axios.post('http://localhost:3000/generate-ticket', {
+            const response = await axios.post('https://web2-projekt.onrender.com/generate-ticket', {
                 "oib": oib,
                 "firstName": firstname,
                 "lastName": lastname
