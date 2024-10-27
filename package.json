@@ -1,0 +1,37 @@
+{
+  "name": "web2-projekt-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "main": "server.cjs",
+  "scripts": {
+    "dev": "node server.cjs",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.cjs",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "express-jwt": "^8.4.1",
+    "express-openid-connect": "^2.17.1",
+    "jwks-rsa": "^3.1.0",
+    "next": "14.2.15",
+    "pg": "^8.13.0",
+    "qr-image": "^3.2.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.15",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  },
+  "type": "module"
+}
