@@ -36,7 +36,10 @@ const config = {
     baseURL: process.env.BASE_URL,
     clientID: process.env.AUTH0_CLIENT_ID,
     issuerBaseURL: process.env.AUTH0_ISSUER_BASE_URL,
-    secret: process.env.AUTH0_SECRET
+    secret: process.env.AUTH0_SECRET,
+    authorizationParams: {
+        redirect_uri: `${process.env.BASE_URL}`
+    }
 };
 
 server.use(auth(config));

@@ -33,7 +33,7 @@ const Tickets = () => {
 
     async function getUser(){
         try {
-            const response = await axios.get(`https://web2-projekt.onrender.com:3000/me`);
+            const response = await axios.get(`https://web2-projekt.onrender.com/me`);
             setUsername(response.data.name);
         }
         catch (error) {
